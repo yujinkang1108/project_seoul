@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url(./common.css);
+@import url(./reset.css);
+/* u_skip */
+#u_skip{
+    position: absolute;
+    width: 100%;
+    top: -50px; left: 0;
+    z-index: 999;
+}
+#u_skip a:focus,
+#u_skip a:active{
+    position: absolute;
+    padding-top: 0.5em;
+    width: 100%; 
+    height: 50px;
+    top: 50px; z-index: 999;
+    text-align: center;
+    color: #fff;
+    background: #333; 
+    overflow: visible;
+}
+
+
+/* 헤더 */
+/* header inner1 */
+.header .inner1{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+.header .inner1 .logo{
+    width: 97.5px;
+    height: 18.5px;
+    margin-top: 8px;
+}
+.header .inner1 .logo a{
+    position: absolute;
+    display: block;
+    width: 105px;
+    height: 27px;
+    background-position: -5px -165px;
+}
+.header .inner1 .gnb-list{
+    display: flex;
+    gap: 20px;
+}
+.header .inner1 .gnb-list .gnb-item:first-child{
+    padding-left: 40px;
+    margin-left: 10px;
+}
+.header .inner1 .gnb-list .gnb-item a{
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 700;
+}
+.header .inner1 .other-list{
+    display: flex;
+    position: absolute;
+    top: 0; right: 0;
+}
+.header .inner1 .other-list .other-item{
+    padding: 0 10px;
+}
+.header .inner1 .other-list .other-item a{
+    font-weight: 700;
+    line-height: 48px;
+}
+
+/* header inner2 */
+.header .inner2{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+} 
+.header .inner2 .slogun{
+    width: 133px;
+    height: 51px;
+    margin: 38px 0 30px;
+} 
+.header .inner2 .search-area{
+    width: 520px;
+    height: 42px;
+    border: 3px solid #2292e9;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    margin-left: -326px;
+} 
+.header .inner2 .search-area fieldset{
+    display: flex;
+    border-style: none;
+    height: 100%;
+}
+.header .inner2 .search-area .ic-key{
+    margin-left: 3px;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 42px;
+} 
+.header .inner2 fieldset input{
+    padding: 0 10px;
+    border-style: none;
+    line-height: 36px;
+    height: 36px;
+    width: calc(100% - 42px);
+}
+.header .inner2 fieldset input::placeholder{
+    color: #2292e9;
+}
+.header .inner2 fieldset .btn-search{
+    position: absolute;
+    background-position: -32px -97px;
+    width: 36px;
+    height: 36px;
+    right: 0;
+}
+.header .inner2 .lang-area{
+    width: 110px;
+    height: 21px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+}
+.header .inner2 .lang-area select{
+    width: 80px;
+    height: 21px;
+    border-color: #afcfea;
+    color: #1E6CB3;
+    font-size: 12px;
+    padding: 0 0 0 2px;
+    line-height: 21px;
+}
+.header .inner2 .lang-area button{
+    width: 30px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #1E6CB3;
+    border: 0;
+    height: 21px;
+}
+.header .inner2 .weather-area{
+    display: flex;
+    width: 270px;
+    height: 85px;
+    margin-top: 34px;
+    vertical-align: top;
+} 
+.header .inner2 .weather-area .img-area{
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.header .inner2 .weather-area .txt-area{
+    display: flex;
+    flex-direction: column;
+    max-width: 242px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.header .inner2 .txt-area .txt1 .temp{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.header .inner2 .txt-area .txt1 .state{
+    font-size: 16px;
+    letter-spacing: -0.1em;
+}
+.header .inner2 .txt-area .txt2{
+    margin-top: 7px;
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+.header .inner2 .txt-area .txt2 .aberage{
+    color: #009944;
+}
+.header .inner2 .txt-area .txt2 .bad{
+    color: #f10000;
+}
+
+/* 푸터 .footer-top*/
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.footer-top .corp-list{
+    display: flex;
+}
+.footer-top .corp-list .corp-item{
+    padding: 0 10px;
+    position: relative;
+}
+.footer-top .corp-list .corp-item:first-child{
+    padding-left: 0;
+}
+.footer-top .corp-list .corp-item+.corp-item::before{
+    content: '';
+    width: 1px;
+    height: 14px;
+    background: #dcdcdc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.footer-top .corp-list .corp-item a{
+    font-size: 12px;
+    color: #636363;
+}
+.footer-top .corp-list .corp-item.policy a{
+    color: #000;
+    font-weight: 700;
+}
+.footer-top .sns-list{
+    display: flex;
+}
+
+.footer-top .sns-list .sns-item+.sns-item{
+    margin-left: 12px;
+}
+.footer-top .sns-list .sns-item.facebook{background-position: -25px 0px;}
+.footer-top .sns-list .sns-item.facebook:hover{background-position: -25px -25px;}
+.footer-top .sns-list .sns-item.twitter{background-position: -50px 0px;}
+.footer-top .sns-list .sns-item.twitter:hover{background-position: -50px -25px;}
+.footer-top .sns-list .sns-item.insta{background-position: -75px 0px;}
+.footer-top .sns-list .sns-item.insta:hover{background-position: -75px -25px;}
+.footer-top .sns-list .sns-item.k_story{background-position: -100px 0px;}
+.footer-top .sns-list .sns-item.k_story:hover{background-position: -100px -25px;}
+.footer-top .sns-list .sns-item.youtube{background-position: -125px 0px;}
+.footer-top .sns-list .sns-item.youtube:hover{background-position: -125px -25px;}
+.footer-top .sns-list .sns-item.n_blog{background-position: -150px 0px;}
+.footer-top .sns-list .sns-item.n_blog:hover{background-position: -150px -25px;}
+
+/* 푸터 .footer-bottom */
+.footer-bottom{
+    padding: 22px 0;
+    border-top: 1px solid #ccc;
+    display: flex;
+}
+.footer-bottom .call-area{
+    margin-right: 40px;
+    width: 108px;
+    height: 45px;
+    background-position: -180px 0;
+}
+.footer-bottom .addr-area .addr{
+    padding-bottom: 2px;
+    font-size: 12px;
+    color: #636363;
+}
+.footer-bottom .mark-area{
+    display: flex;
+    margin-left: auto;
+}
+
+/* btn-top */
+.btn-top{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: 600px;
+    transition: 1s;
+    cursor: pointer; 
+    opacity: 0;
+}
+.btn-top.show{
+    opacity: 1;
+    bottom: 98px;
+}
+.btn-top.hide{
+    opacity: 0;
+    bottom: 0;
+}
+
+
+

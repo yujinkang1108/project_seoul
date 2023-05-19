@@ -1,0 +1,82 @@
+.blind{
+    width: 1px; height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
+strong,.headline{
+    font-weight: bold;
+}
+.common-inner{
+    width: 1152px;
+    margin: 0 auto;
+}
+
+.header .inner1 .logo a,
+.header .inner2 fieldset .btn-search,
+.inner3 .group-control .navigation .btn.prev,
+.inner3 .group-control .navigation .btn.autoplay,
+.inner3 .group-control .navigation .btn.next,
+.inner4 .group-event .link-more,
+.sc-news .btn-more,
+.sc-banner .group-control .navigation .btn.prev,
+.sc-banner .group-control .navigation .btn.autoplay,
+.sc-banner .group-control .navigation .btn.autoplay.on,
+.inner3 .group-control .navigation .btn.autoplay.on,
+.sc-banner .group-control .navigation .btn.next,
+.footer-bottom .call-area{
+    background-image: url(../img/icon_set_common_2019.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+.inner3 .group-slide .title-area .box.citizen .title:before,
+.inner3 .group-slide .title-area .box.news .title:before{
+    background-image: url(../img/icon_main.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
+.sc-service .service-item .title::before{
+    background-image: url(../img/icon_set_service.png);
+    background-repeat: no-repeat;
+    background-size: 1200px 60px;
+    content: '';
+    width: 60px;
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+}
+
+.sc-service .story-box,
+.sc-service .festival-box,
+.sc-service .story-box:hover,
+.sc-service .festival-box:hover{
+    background-image: url(../img/logo_event.png);
+    background-repeat: no-repeat;
+    background-size: 160px;
+}
+
+.sc-info .info-list .info-item a .title::before{
+    background-size: 85px;
+    display: block;
+    width: 85px; height: 85px;
+    content: '';
+    margin-bottom: 15px;
+}
+
+.inner5 .group-sns .headline::after,
+.inner5 .group-sns .sns-list .sns-item{
+    background-image: url(../img/ico_sns_list.png);
+    background-repeat: no-repeat;
+    background-size: 280px;
+}
+
+.footer-top .sns-list .sns-item{
+    background-image: url(../img/icon_set_sns.png);
+    background-repeat: no-repeat;
+    background-size: 175px;
+    width: 24px;
+    height: 24px;
+}
